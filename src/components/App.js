@@ -20,7 +20,7 @@ fetch("http://localhost:4000/questions")
   return (
     <main>
       <AdminNavBar onChangePage={setPage} />
-      {page === "Form" ? <QuestionForm QuestionList quiz={quiz} setquiz={setquiz} /> : <QuestionList quiz={quiz}/>}
+      {page === "Form" ? <QuestionForm QuestionList quiz={quiz} setquiz={setquiz} /> : <QuestionList quiz={quiz} setquiz={setquiz}/>}
     </main>
   );
 }
